@@ -1,0 +1,42 @@
+name: Renovate config validate
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Cache node_modules
+        uses: actions/cache@v1
+        env:
+          cache-name: cache-node_modules
+        with:
+          path: node_modules
+          key: test-${{ env.cache-name }}-${{ hashFiles('yarn.lock') }}
+          restore-keys: |
+            test-${{ env.cache-name }}-${{ hashFiles('yarn.lock') }}
+            test-${{ env.cache-name }}-
+            test-
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - run: yarn install
+
+      - run: yarn run test
+
+      - name: Slack Notification
+        uses: homoluctus/slatify@v2.1.2
+        if: always()
+        with:
+          type: ${{ job.status }}
+          job_name: '*${{ github.workflow }}*'
+          icon_emoji: ":octocat:"
+          url: ${{ secrets.SLACK_WEBHOOK }}
