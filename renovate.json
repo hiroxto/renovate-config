@@ -20,58 +20,44 @@
     "automerge": true
   },
   "bundler": {
-    "extends": [
-      "schedule:daily"
-    ],
     "enabled": true,
+    "schedule": ["before 10am on monday"],
     "patch": {
       "automerge": true
     }
   },
   "composer": {
-    "extends": [
-      "schedule:daily"
-    ],
     "enabled": true,
+    "schedule": ["before 10am on monday"],
     "patch": {
       "automerge": true
     }
   },
   "docker-compose": {
-    "extends": [
-      "schedule:daily"
-    ],
     "enabled": true,
+    "schedule": ["before 10am on monday"],
     "automerge": false
   },
   "dockerfile": {
-    "extends": [
-      "schedule:daily"
-    ],
     "enabled": true,
+    "schedule": ["before 10am on monday"],
     "automerge": false
   },
   "github-actions": {
-    "extends": [
-      "schedule:daily"
-    ],
     "enabled": true,
+    "schedule": ["before 10am on monday"],
     "automerge": false
   },
   "gomod": {
-    "extends": [
-      "schedule:daily"
-    ],
     "enabled": true,
+    "schedule": ["before 10am on monday"],
     "patch": {
       "automerge": true
     }
   },
   "npm": {
-    "extends": [
-      "schedule:daily"
-    ],
     "enabled": true,
+    "schedule": ["before 10am on monday"],
     "patch": {
       "automerge": true
     }
