@@ -1,0 +1,79 @@
+{
+  "extends": [
+    ":enableRenovate",
+    ":timezone(Asia/Tokyo)",
+    ":label(renovate)",
+    "config:base"
+  ],
+  "pin": {
+    "extends": [
+      "schedule:daily"
+    ],
+    "enabled": true,
+    "automerge": true
+  },
+  "lockFileMaintenance": {
+    "extends": [
+      "before 10am on the 1st day of the month"
+    ],
+    "enabled": true,
+    "automerge": true
+  },
+  "bundler": {
+    "extends": [
+      "schedule:daily"
+    ],
+    "enabled": true,
+    "patch": {
+      "automerge": true
+    }
+  },
+  "composer": {
+    "extends": [
+      "schedule:daily"
+    ],
+    "enabled": true,
+    "patch": {
+      "automerge": true
+    }
+  },
+  "docker-compose": {
+    "extends": [
+      "schedule:daily"
+    ],
+    "enabled": true,
+    "automerge": false
+  },
+  "dockerfile": {
+    "extends": [
+      "schedule:daily"
+    ],
+    "enabled": true,
+    "automerge": false
+  },
+  "github-actions": {
+    "extends": [
+      "schedule:daily"
+    ],
+    "enabled": true,
+    "automerge": false
+  },
+  "gomod": {
+    "extends": [
+      "schedule:daily"
+    ],
+    "enabled": true,
+    "patch": {
+      "automerge": true
+    }
+  },
+  "npm": {
+    "extends": [
+      "schedule:daily"
+    ],
+    "enabled": true,
+    "patch": {
+      "automerge": true
+    }
+  }
+}
