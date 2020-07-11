@@ -1,5 +1,10 @@
 {
   "extends": [
     "github>hiroxto/renovate-config"
-  ]
+  ],
+  "npm": {
+    "minor": {
+      "automerge": true
+    }
+  }
 }
