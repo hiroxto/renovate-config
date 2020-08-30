@@ -84,10 +84,10 @@
   dependencies:
     tslib "2.0.0"
 
-"@sindresorhus/is@3.1.1":
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-3.1.1.tgz#6e39e4222add8b362da35720c9dd5d53345d5851"
-  integrity sha512-tLnujxFtfH7F+i5ghUfgGlJsvyCKvUnSMFMlWybFdX9/DdX8svb4Zwx1gV0gkkVCHXtmPSetoAR3QlKfOld6Tw==
+"@sindresorhus/is@3.1.2":
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-3.1.2.tgz#548650de521b344e3781fbdb0ece4aa6f729afb8"
+  integrity sha512-JiX9vxoKMmu8Y3Zr2RVathBL1Cdu4Nt4MuNWemt1Nc06A0RAin9c5FArkhGsyMBWfCu4zj+9b+GxtjAnE4qqLQ==
 
 "@sindresorhus/is@^3.0.0":
   version "3.1.0"
@@ -2564,14 +2564,14 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@22.23.1:
-  version "22.23.1"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-22.23.1.tgz#cad92e2bc903d1b1fbe18aaa6bedbe907129447f"
-  integrity sha512-yf8YIzdw1ptSujCVF93o0hE25UnkHfZUiamWzhS4ssRX3s42WWUuwnadRP2ndKrE0BoU7IeaW0TprKjcqvHd8g==
+renovate@22.25.6:
+  version "22.25.6"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-22.25.6.tgz#cbc1027c9806532a5b9890b66854fa998e48b522"
+  integrity sha512-OKtUifWoED1g7GOYU4iHL4tRtBC4zte8ImldS/ZhbKCPF+PbRQR8BXdFfn1BsAo6u0IChDMFRe/Pi8WZK5nusg==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@renovatebot/ruby-semver" "0.2.1"
-    "@sindresorhus/is" "3.1.1"
+    "@sindresorhus/is" "3.1.2"
     "@yarnpkg/core" "2.1.1"
     "@yarnpkg/parsers" "2.1.0"
     aws-sdk "2.738.0"
@@ -2623,7 +2623,7 @@ renovate@22.23.1:
     semver-utils "1.1.4"
     shlex "2.0.2"
     shortid "2.2.15"
-    simple-git "2.18.0"
+    simple-git "2.20.1"
     slugify "1.4.5"
     toml "3.0.0"
     traverse "0.6.6"
@@ -2835,10 +2835,10 @@ signal-exit@^3.0.0:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.3.tgz#a1410c2edd8f077b08b4e253c8eacfcaf057461c"
   integrity sha512-VUJ49FC8U1OxwZLxIbTTrDvLnf/6TDgxZcK8wxR8zs13xpx7xbG60ndBlhNrFi2EMuFRoeDoJO7wthSLq42EjA==
 
-simple-git@2.18.0:
-  version "2.18.0"
-  resolved "https://registry.yarnpkg.com/simple-git/-/simple-git-2.18.0.tgz#5982577cb5e0039dd6e72905c501daa175b752cf"
-  integrity sha512-zT25VFQgQZJVshLrWDe49deMIgrjJJzGKMOrEx6XzMP8BERg7ZWJRsBPureufi2oSZ50x6z0oNKBfgboY2NyVg==
+simple-git@2.20.1:
+  version "2.20.1"
+  resolved "https://registry.yarnpkg.com/simple-git/-/simple-git-2.20.1.tgz#bab3f4d083ed6e1655a7c62ab8e8920eecae86f6"
+  integrity sha512-aa9s2ZLjXlHCVGbDXQLInMLvLkxKEclqMU9X5HMXi3tLWLxbWObz1UgtyZha6ocHarQtFp0OjQW9KHVR1g6wbA==
   dependencies:
     "@kwsites/file-exists" "^1.1.1"
     "@kwsites/promise-deferred" "^1.1.1"
