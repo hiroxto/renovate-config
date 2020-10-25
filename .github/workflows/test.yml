@@ -33,7 +33,7 @@ jobs:
       - run: yarn run test
 
       - name: Slack Notification
-        uses: homoluctus/slatify@v2.1.2
+        uses: homoluctus/slatify@v3.0.0
         if: always()
         with:
           type: ${{ job.status }}
