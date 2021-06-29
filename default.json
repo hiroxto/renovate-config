@@ -6,39 +6,7 @@
     "config:base",
     "github>hiroxto/renovate-config:docker",
     "github>hiroxto/renovate-config:lockFileMaintenance",
-    "github>hiroxto/renovate-config:pin"
-  ],
-  "bundler": {
-    "enabled": true,
-    "schedule": ["before 10am on monday"],
-    "patch": {
-      "automerge": true
-    }
-  },
-  "composer": {
-    "enabled": true,
-    "schedule": ["before 10am on monday"],
-    "patch": {
-      "automerge": true
-    }
-  },
-  "github-actions": {
-    "enabled": true,
-    "schedule": ["before 10am on monday"],
-    "automerge": false
-  },
-  "gomod": {
-    "enabled": true,
-    "schedule": ["before 10am on monday"],
-    "patch": {
-      "automerge": true
-    }
-  },
-  "npm": {
-    "enabled": true,
-    "schedule": ["before 10am on monday"],
-    "patch": {
-      "automerge": true
-    }
-  }
+    "github>hiroxto/renovate-config:pin",
+    "github>hiroxto/renovate-config:update"
+  ]
 }
