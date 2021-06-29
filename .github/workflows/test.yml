@@ -34,7 +34,7 @@ jobs:
 
       - name: Slack Notification
         uses: homoluctus/slatify@v3.0.0
-        if: always()
+        if: failure()
         with:
           type: ${{ job.status }}
           job_name: '*${{ github.workflow }}*'
