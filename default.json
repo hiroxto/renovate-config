@@ -4,15 +4,9 @@
     ":timezone(Asia/Tokyo)",
     ":label(renovate)",
     "config:base",
-    "github>hiroxto/renovate-config:lockFileMaintenance"
+    "github>hiroxto/renovate-config:lockFileMaintenance",
+    "github>hiroxto/renovate-config:pin"
   ],
-  "pin": {
-    "extends": [
-      "schedule:daily"
-    ],
-    "enabled": true,
-    "automerge": true
-  },
   "bundler": {
     "enabled": true,
     "schedule": ["before 10am on monday"],
