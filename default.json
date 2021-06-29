@@ -8,6 +8,7 @@
     "github>hiroxto/renovate-config:docker",
     "github>hiroxto/renovate-config:lockFileMaintenance",
     "github>hiroxto/renovate-config:pin",
+    "github>hiroxto/renovate-config:schedule",
     "github>hiroxto/renovate-config:update"
   ]
 }
