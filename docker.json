@@ -2,12 +2,10 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "docker-compose": {
     "enabled": true,
-    "schedule": ["before 10am on monday"],
     "automerge": false
   },
   "dockerfile": {
     "enabled": true,
-    "schedule": ["before 10am on monday"],
     "automerge": false
   }
 }
