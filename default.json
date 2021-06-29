@@ -4,6 +4,7 @@
     ":timezone(Asia/Tokyo)",
     ":label(renovate)",
     "config:base",
+    "github>hiroxto/renovate-config:docker",
     "github>hiroxto/renovate-config:lockFileMaintenance",
     "github>hiroxto/renovate-config:pin"
   ],
@@ -20,16 +21,6 @@
     "patch": {
       "automerge": true
     }
-  },
-  "docker-compose": {
-    "enabled": true,
-    "schedule": ["before 10am on monday"],
-    "automerge": false
-  },
-  "dockerfile": {
-    "enabled": true,
-    "schedule": ["before 10am on monday"],
-    "automerge": false
   },
   "github-actions": {
     "enabled": true,
