@@ -1,10 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
+    "config:base",
     ":enableRenovate",
     ":timezone(Asia/Tokyo)",
     ":label(renovate)",
-    "config:base",
     "github>hiroxto/renovate-config:docker",
     "github>hiroxto/renovate-config:lockFileMaintenance",
     "github>hiroxto/renovate-config:pin",
