@@ -30,7 +30,13 @@ jobs:
 
       - run: yarn install
 
-      - run: yarn run test
+      - name: Validate renovate config
+        run: |
+          for file in `find . -maxdepth 1 -type f -name *.json -not -name package.json`; do
+            bname=`basename ${file}`
+            echo "Validate $bname"
+            RENOVATE_CONFIG_FILE=${bname} npx renovate-config-validator
+          done
 
       - name: Slack Notification
         uses: homoluctus/slatify@v3.0.0
