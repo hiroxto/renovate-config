@@ -56,3 +56,30 @@ pinについての設定．
 
 全てパッチアップデートのみを自動マージする．
 
+## 設定を上書きする
+
+プリセットの一部を読み込みたくない時は`ignorePresets`を使う．
+
+```json
+{
+  "extends": [
+    "github>hiroxto/renovate-config"
+  ],
+  "ignorePresets": [
+    "github>hiroxto/renovate-config:schedule"
+  ]
+}
+```
+
+上書きしたいだけなら，`renovate.json`で上書きする．
+
+```json
+{
+  "extends": [
+    "github>hiroxto/renovate-config"
+  ],
+  "schedule": [
+    "every weekend"
+  ]
+}
+```
