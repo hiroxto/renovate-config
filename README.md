@@ -12,6 +12,10 @@ Renovate の設定済みプリセット.
 }
 ```
 
+プリセットについて詳しくは [Renovateのドキュメント](https://docs.renovatebot.com/config-presets/) を参照．
+
+[Shareable Config Presets | Renovate Docs](https://docs.renovatebot.com/config-presets/)
+
 ## 設定済みの設定ファイル
 
 ### docker.json
