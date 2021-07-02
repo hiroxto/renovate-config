@@ -32,7 +32,7 @@ jobs:
 
       - name: Validate renovate config
         run: |
-          for file in `find . -maxdepth 1 -type f -name "*.json" -not -name package.json`; do
+          for file in `find . -maxdepth 1 -type f -name "*.json" -not -name package.json | sort`; do
             bname=`basename ${file}`
             echo "Validate $bname"
             RENOVATE_CONFIG_FILE=${bname} npx renovate-config-validator
