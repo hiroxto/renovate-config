@@ -689,10 +689,10 @@
   dependencies:
     tslib "2.1.0"
 
-"@sindresorhus/is@4.1.0":
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-4.1.0.tgz#3853c0c48b47f0ebcdd3cd9a66fdd0d277173e78"
-  integrity sha512-Cgva8HxclecUCmAImsWsbZGUh6p5DSzQ8l2Uzxuj9ANiD7LVhLM1UJ2hX/R2Y+ILpvqgW9QjmTCaBkXtj8+UOg==
+"@sindresorhus/is@4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-4.2.0.tgz#667bfc6186ae7c9e0b45a08960c551437176e1ca"
+  integrity sha512-VkE3KLBmJwcCaVARtQpfuKcKv8gcBmUubrfHGF84dXuuW6jgsRYxPtzcIhPyK9WAPpRt2/xY6zkD9MnRaJzSyw==
 
 "@sindresorhus/is@^4.0.0":
   version "4.0.1"
@@ -1863,10 +1863,10 @@ handlebars@4.7.7:
   optionalDependencies:
     uglify-js "^3.1.4"
 
-handy-redis@2.2.2:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/handy-redis/-/handy-redis-2.2.2.tgz#12d1edae6e762076b10f173fab82d895ad252607"
-  integrity sha512-m+7d89zM/rUVvtvVV0/wQGY2SQOh2fgIgg2Fts9q/wQFom0h5sZTCYPHgzPtnJxDOilIMvxRbPHi7b+IKin7UA==
+handy-redis@2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/handy-redis/-/handy-redis-2.3.1.tgz#13469450730b74b14eab3e4a8aafcd65bb288392"
+  integrity sha512-ilZYZ4l9+BSxavnjzSbI0yNpM8wfuEP8wAjsPAoL5ThfcCEswN7EpuSCJ4PfRpuGvxRRrivjSImbqpM9NkDB7w==
   dependencies:
     "@types/redis" "^2.8.30"
 
@@ -3132,17 +3132,17 @@ remark@13.0.0:
     remark-stringify "^9.0.0"
     unified "^9.1.0"
 
-renovate@27.14.0:
-  version "27.14.0"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-27.14.0.tgz#aee1c9e6a2a372bc86de09c62e005fe7c030a6d6"
-  integrity sha512-ZEFwgPMapA9cO2BtK3lFNWrUbxY2+yVtuGa7yNyonAC4sJWouUbolyBApnOLkezp/3Rci34VV5k7l0X+aUlEuA==
+renovate@27.19.2:
+  version "27.19.2"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-27.19.2.tgz#9be5d25d7f7a9855ce4d6b3d9a91a6ffc77b7bec"
+  integrity sha512-jCPbKS3ES3F9Ab7BCx1fNlSooQ+ej1FagFe5ZrcSoUqzVJ1T72EdfPxP5p0ml7ugkusbjjh6XopCXLLUMExVAQ==
   dependencies:
     "@aws-sdk/client-ecr" "3.25.0"
     "@breejs/later" "4.0.2"
     "@iarna/toml" "2.2.5"
     "@renovate/pep440" "1.0.0"
     "@renovatebot/ruby-semver" "1.0.0"
-    "@sindresorhus/is" "4.1.0"
+    "@sindresorhus/is" "4.2.0"
     "@yarnpkg/core" "2.4.0"
     "@yarnpkg/parsers" "2.4.0"
     azure-devops-node-api "11.0.1"
@@ -3171,7 +3171,7 @@ renovate@27.14.0:
     global-agent "2.2.0"
     got "11.8.2"
     handlebars "4.7.7"
-    handy-redis "2.2.2"
+    handy-redis "2.3.1"
     hasha "5.2.2"
     ignore "5.1.8"
     ini "2.0.0"
