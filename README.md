@@ -23,6 +23,10 @@ Renovate の設定済みプリセット。
 Docker関連の設定。
 `docker-compose`と`dockerfile`のアップデートを有効化するが，自動マージは全てオフに設定されている。
 
+### gitFlow.json
+
+git-flow向けにベースブランチをdevelopに設定する。
+
 ### groupJest.json
 
 jestとts-jestをグループにする設定。
