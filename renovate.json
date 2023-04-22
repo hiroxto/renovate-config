@@ -1,14 +1,14 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "local>hiroxto/renovate-config"
-  ],
-  "npm": {
-    "patch": {
-      "automerge": true
-    },
-    "minor": {
-      "automerge": true
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "local>hiroxto/renovate-config"
+    ],
+    "npm": {
+        "patch": {
+            "automerge": true
+        },
+        "minor": {
+            "automerge": true
+        }
     }
-  }
 }

@@ -1,11 +1,11 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "docker-compose": {
-    "enabled": true,
-    "automerge": false
-  },
-  "dockerfile": {
-    "enabled": true,
-    "automerge": false
-  }
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "docker-compose": {
+        "enabled": true,
+        "automerge": false
+    },
+    "dockerfile": {
+        "enabled": true,
+        "automerge": false
+    }
 }

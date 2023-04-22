@@ -1,14 +1,14 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "packageRules": [
-    {
-      "groupName": "linters",
-      "extends": [
-        "packages:linters"
-      ],
-      "matchPackageNames": [
-        "prettier"
-      ]
-    }
-  ]
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "packageRules": [
+        {
+            "groupName": "linters",
+            "extends": [
+                "packages:linters"
+            ],
+            "matchPackageNames": [
+                "prettier"
+            ]
+        }
+    ]
 }
