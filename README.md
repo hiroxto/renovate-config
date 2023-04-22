@@ -6,9 +6,9 @@ Renovate の設定済みプリセット。
 
 ```json
 {
-  "extends": [
-    "github>hiroxto/renovate-config"
-  ]
+    "extends": [
+        "github>hiroxto/renovate-config"
+    ]
 }
 ```
 
@@ -66,12 +66,12 @@ pinについての設定。
 
 ```json
 {
-  "extends": [
-    "github>hiroxto/renovate-config"
-  ],
-  "ignorePresets": [
-    "github>hiroxto/renovate-config:schedule"
-  ]
+    "extends": [
+        "github>hiroxto/renovate-config"
+    ],
+    "ignorePresets": [
+        "github>hiroxto/renovate-config:schedule"
+    ]
 }
 ```
 
@@ -79,11 +79,11 @@ pinについての設定。
 
 ```json
 {
-  "extends": [
-    "github>hiroxto/renovate-config"
-  ],
-  "schedule": [
-    "every weekend"
-  ]
+    "extends": [
+        "github>hiroxto/renovate-config"
+    ],
+    "schedule": [
+        "every weekend"
+    ]
 }
 ```

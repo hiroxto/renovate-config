@@ -1,16 +1,16 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base",
-    ":enableRenovate",
-    ":timezone(Asia/Tokyo)",
-    ":label(renovate)",
-    "github>hiroxto/renovate-config:docker",
-    "github>hiroxto/renovate-config:groupJest",
-    "github>hiroxto/renovate-config:groupLinters",
-    "github>hiroxto/renovate-config:lockFileMaintenance",
-    "github>hiroxto/renovate-config:pin",
-    "github>hiroxto/renovate-config:schedule",
-    "github>hiroxto/renovate-config:update"
-  ]
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "config:base",
+        ":enableRenovate",
+        ":timezone(Asia/Tokyo)",
+        ":label(renovate)",
+        "github>hiroxto/renovate-config:docker",
+        "github>hiroxto/renovate-config:groupJest",
+        "github>hiroxto/renovate-config:groupLinters",
+        "github>hiroxto/renovate-config:lockFileMaintenance",
+        "github>hiroxto/renovate-config:pin",
+        "github>hiroxto/renovate-config:schedule",
+        "github>hiroxto/renovate-config:update"
+    ]
 }

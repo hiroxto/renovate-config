@@ -1,13 +1,13 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    ":timezone(Asia/Tokyo)"
-  ],
-  "lockFileMaintenance": {
-    "schedule": [
-      "after 9:00 before 21:00 on the 1st day of the month"
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        ":timezone(Asia/Tokyo)"
     ],
-    "enabled": true,
-    "automerge": true
-  }
+    "lockFileMaintenance": {
+        "schedule": [
+            "after 9:00 before 21:00 on the 1st day of the month"
+        ],
+        "enabled": true,
+        "automerge": true
+    }
 }

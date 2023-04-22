@@ -1,10 +1,10 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "pin": {
-    "extends": [
-      "schedule:daily"
-    ],
-    "enabled": true,
-    "automerge": true
-  }
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "pin": {
+        "extends": [
+            "schedule:daily"
+        ],
+        "enabled": true,
+        "automerge": true
+    }
 }

@@ -1,47 +1,47 @@
 name: Renovate config validate
 
-on: [push]
+on: [pull_request]
 
 jobs:
-  test:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [18.x]
-    steps:
-      - uses: actions/checkout@v3
+    test:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                node-version: [18.x]
+        steps:
+            -   uses: actions/checkout@v3
 
-      - name: Cache node_modules
-        uses: actions/cache@v3
-        env:
-          cache-name: cache-node_modules
-        with:
-          path: node_modules
-          key: test-${{ env.cache-name }}-${{ hashFiles('yarn.lock') }}
-          restore-keys: |
-            test-${{ env.cache-name }}-${{ hashFiles('yarn.lock') }}
-            test-${{ env.cache-name }}-
-            test-
+            -   name: Cache node_modules
+                uses: actions/cache@v3
+                env:
+                    cache-name: cache-node_modules
+                with:
+                    path: node_modules
+                    key: test-${{ env.cache-name }}-${{ hashFiles('yarn.lock') }}
+                    restore-keys: |
+                        test-${{ env.cache-name }}-${{ hashFiles('yarn.lock') }}
+                        test-${{ env.cache-name }}-
+                        test-
 
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
+            -   name: Use Node.js ${{ matrix.node-version }}
+                uses: actions/setup-node@v3
+                with:
+                    node-version: ${{ matrix.node-version }}
 
-      - run: yarn install
+            -   run: yarn install
 
-      - name: Validate renovate config
-        run: |
-          for file in `find . -maxdepth 1 -type f -name "*.json" -not -name package.json -exec basename {} \; | sort`; do
-            echo "Validate ${file}"
-            RENOVATE_CONFIG_FILE=${file} npx renovate-config-validator
-          done
+            -   name: Validate renovate config
+                run: |
+                    for file in `find . -maxdepth 1 -type f -name "*.json" -not -name package.json -exec basename {} \; | sort`; do
+                        echo "Validate ${file}"
+                        RENOVATE_CONFIG_FILE=${file} npx renovate-config-validator
+                    done
 
-      - name: Slack Notification
-        uses: homoluctus/slatify@v3.0.0
-        if: failure()
-        with:
-          type: ${{ job.status }}
-          job_name: '*${{ github.workflow }}*'
-          icon_emoji: ":octocat:"
-          url: ${{ secrets.SLACK_WEBHOOK }}
+            -   name: Slack Notification
+                uses: homoluctus/slatify@v3.0.0
+                if: failure()
+                with:
+                    type: ${{ job.status }}
+                    job_name: '*${{ github.workflow }}*'
+                    icon_emoji: ":octocat:"
+                    url: ${{ secrets.SLACK_WEBHOOK }}

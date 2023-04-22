@@ -1,14 +1,14 @@
 {
-  "name": "renovate-config",
-  "version": "0.0.1",
-  "description": "Renovate config",
-  "repository": "git@github.com:hiroxto/renovate-config.git",
-  "author": "Hiroto Kitazawa <hiroto.ktzw@gmail.com>",
-  "license": "MIT",
-  "scripts": {
-    "test": "renovate-config-validator"
-  },
-  "devDependencies": {
-    "renovate": "35.50.1"
-  }
+    "name": "renovate-config",
+    "version": "0.0.1",
+    "description": "Renovate config",
+    "repository": "git@github.com:hiroxto/renovate-config.git",
+    "author": "Hiroto Kitazawa <hiroto.ktzw@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "test": "renovate-config-validator"
+    },
+    "devDependencies": {
+        "renovate": "35.50.1"
+    }
 }

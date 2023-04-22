@@ -1,12 +1,12 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "packageRules": [
-    {
-      "groupName": "jest",
-      "matchSourceUrlPrefixes": [
-        "https://github.com/facebook/jest",
-        "https://github.com/kulshekhar/ts-jest"
-      ]
-    }
-  ]
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "packageRules": [
+        {
+            "groupName": "jest",
+            "matchSourceUrlPrefixes": [
+                "https://github.com/facebook/jest",
+                "https://github.com/kulshekhar/ts-jest"
+            ]
+        }
+    ]
 }
