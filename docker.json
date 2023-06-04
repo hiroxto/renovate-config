@@ -1,5 +1,6 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "description": "Docker関連の設定。`docker-compose`と`dockerfile`のアップデートを有効化するが，自動マージは全てオフに設定されている。",
     "docker-compose": {
         "enabled": true,
         "automerge": false

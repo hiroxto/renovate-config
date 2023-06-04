@@ -1,5 +1,6 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "description": "デフォルトで読み込まれる設定ファイル。",
     "extends": [
         "config:base",
         ":enableRenovate",

@@ -1,5 +1,6 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "description": "ロックファイルのメンテナンスについての設定。スケジュールを毎月1日の9:00から21:00に実行し，自動でマージする。",
     "extends": [
         ":timezone(Asia/Tokyo)"
     ],

@@ -1,5 +1,6 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "description": "Linter周りのグループ設定。Renovate標準の`packages:linters`に加えて，`prettier`もLinterとしてグループ化する。",
     "packageRules": [
         {
             "groupName": "linters",

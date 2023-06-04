@@ -1,5 +1,13 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "description": [
+        "パッケージのアップデートを設定。設定しているマネージャーは以下の通り。",
+        "bundler",
+        "composer",
+        "github-actions",
+        "gomod",
+        "npm"
+    ],
     "bundler": {
         "enabled": true,
         "patch": {
