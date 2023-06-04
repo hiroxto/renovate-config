@@ -1,5 +1,9 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "description": [
+        "hiroxto/renovate-config自身のRenovateの設定ファイル。",
+        "この設定は共有されない。"
+    ],
     "extends": [
         "local>hiroxto/renovate-config"
     ],
