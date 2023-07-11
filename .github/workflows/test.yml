@@ -21,9 +21,9 @@ jobs:
                     cache-name: cache-node_modules
                 with:
                     path: node_modules
-                    key: test-${{ env.cache-name }}-${{ hashFiles('yarn.lock') }}
+                    key: test-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }}
                     restore-keys: |
-                        test-${{ env.cache-name }}-${{ hashFiles('yarn.lock') }}
+                        test-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }}
                         test-${{ env.cache-name }}-
                         test-
 
@@ -32,7 +32,7 @@ jobs:
                 with:
                     node-version: ${{ matrix.node-version }}
 
-            -   run: yarn install
+            -   run: npm install
 
             -   name: Validate renovate config
                 run: |
