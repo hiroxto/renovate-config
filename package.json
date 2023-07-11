@@ -2,6 +2,7 @@
     "name": "renovate-config",
     "version": "0.0.1",
     "description": "Renovate config",
+    "type": "module",
     "repository": "git@github.com:hiroxto/renovate-config.git",
     "author": "Hiroto Kitazawa <hiroto.ktzw@gmail.com>",
     "license": "MIT",
