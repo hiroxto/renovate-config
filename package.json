@@ -7,5 +7,8 @@
     "license": "MIT",
     "scripts": {
         "test": "renovate-config-validator"
+    },
+    "dependencies": {
+        "renovate": "^36.7.0"
     }
 }
