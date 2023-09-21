@@ -6,7 +6,6 @@
         ":enableRenovate",
         ":timezone(Asia/Tokyo)",
         ":label(renovate)",
-        "github>hiroxto/renovate-config:docker",
         "github>hiroxto/renovate-config:groupJest",
         "github>hiroxto/renovate-config:groupLinters",
         "github>hiroxto/renovate-config:lockFileMaintenance",

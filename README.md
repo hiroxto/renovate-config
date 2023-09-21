@@ -18,11 +18,6 @@ Renovate の設定済みプリセット。
 
 ## 設定済みの設定ファイル
 
-### docker.json
-
-Docker関連の設定。
-`docker-compose`と`dockerfile`のアップデートを有効化するが，自動マージは全てオフに設定されている。
-
 ### gitFlow.json
 
 git-flow向けにベースブランチをdevelopに設定する。
@@ -58,11 +53,13 @@ pinについての設定。
 
 - bundler
 - composer
+- docker-compose
+- dockerfile
 - github-actions
 - gomod
 - npm
 
-全てパッチアップデートのみを自動マージする。
+いずれも自動マージを無効化。
 
 ## 設定を上書きする
 
