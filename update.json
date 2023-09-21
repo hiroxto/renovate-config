@@ -10,15 +10,11 @@
     ],
     "bundler": {
         "enabled": true,
-        "patch": {
-            "automerge": true
-        }
+        "automerge": false
     },
     "composer": {
         "enabled": true,
-        "patch": {
-            "automerge": true
-        }
+        "automerge": false
     },
     "github-actions": {
         "enabled": true,
@@ -26,14 +22,10 @@
     },
     "gomod": {
         "enabled": true,
-        "patch": {
-            "automerge": true
-        }
+        "automerge": false
     },
     "npm": {
         "enabled": true,
-        "patch": {
-            "automerge": true
-        }
+        "automerge": false
     }
 }
