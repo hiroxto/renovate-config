@@ -16,6 +16,14 @@
         "enabled": true,
         "automerge": false
     },
+    "docker-compose": {
+        "enabled": true,
+        "automerge": false
+    },
+    "dockerfile": {
+        "enabled": true,
+        "automerge": false
+    },
     "github-actions": {
         "enabled": true,
         "automerge": false
