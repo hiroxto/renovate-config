@@ -31,6 +31,11 @@ jestとts-jestをグループにする設定。
 Linter周りのグループ設定。
 Renovate標準の`packages:linters`に加えて，`prettier`もLinterとしてグループ化する。
 
+### groupVeeValidate.json
+
+[vee-validate](https://github.com/logaretm/vee-validate/)をグループ化する設定。
+npmの[vee-validate](https://www.npmjs.com/package/vee-validate)パッケージと[@vee-validate](https://github.com/logaretm/vee-validate/tree/main/packages)以下のパッケージをグループ化する。
+
 ### lockFileMaintenance.json
 
 ロックファイルのメンテナンスについての設定。
