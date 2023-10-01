@@ -6,6 +6,7 @@ Renovate の設定済みプリセット。
 
 ```json
 {
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
         "github>hiroxto/renovate-config"
     ]
@@ -72,6 +73,7 @@ pinについての設定。
 
 ```json
 {
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
         "github>hiroxto/renovate-config"
     ],
@@ -85,6 +87,7 @@ pinについての設定。
 
 ```json
 {
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
         "github>hiroxto/renovate-config"
     ],
