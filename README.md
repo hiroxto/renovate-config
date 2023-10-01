@@ -6,6 +6,7 @@ Renovate の設定済みプリセット。
 
 ```json
 {
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
         "github>hiroxto/renovate-config"
     ]
@@ -30,6 +31,11 @@ jestとts-jestをグループにする設定。
 
 Linter周りのグループ設定。
 Renovate標準の`packages:linters`に加えて，`prettier`もLinterとしてグループ化する。
+
+### groupVeeValidate.json
+
+[vee-validate](https://github.com/logaretm/vee-validate/)をグループ化する設定。
+npmの[vee-validate](https://www.npmjs.com/package/vee-validate)パッケージと[@vee-validate](https://github.com/logaretm/vee-validate/tree/main/packages)以下のパッケージをグループ化する。
 
 ### lockFileMaintenance.json
 
@@ -67,6 +73,7 @@ pinについての設定。
 
 ```json
 {
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
         "github>hiroxto/renovate-config"
     ],
@@ -80,6 +87,7 @@ pinについての設定。
 
 ```json
 {
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
         "github>hiroxto/renovate-config"
     ],

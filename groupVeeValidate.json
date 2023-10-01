@@ -1,0 +1,11 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "description": "vee-validateをグループにする設定。",
+    "packageRules": [
+        {
+            "groupName": "vee-validate",
+            "matchPackageNames": ["vee-validate"],
+            "matchPackagePrefixes": ["@vee-validate/"]
+        }
+    ]
+}
