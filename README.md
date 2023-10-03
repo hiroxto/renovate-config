@@ -69,6 +69,20 @@ pinについての設定。
 
 ## 設定を上書きする
 
+`renovate.json`内で上書きする。
+
+```json
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "github>hiroxto/renovate-config"
+    ],
+    "schedule": [
+        "every weekend"
+    ]
+}
+```
+
 プリセットの一部を読み込みたくない時は`ignorePresets`を使う。
 
 ```json
@@ -79,20 +93,6 @@ pinについての設定。
     ],
     "ignorePresets": [
         "github>hiroxto/renovate-config:schedule"
-    ]
-}
-```
-
-上書きしたいだけなら，`renovate.json`で上書きする。
-
-```json
-{
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "extends": [
-        "github>hiroxto/renovate-config"
-    ],
-    "schedule": [
-        "every weekend"
     ]
 }
 ```
