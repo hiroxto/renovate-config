@@ -25,12 +25,12 @@ git-flow向けにベースブランチをdevelopに設定する。
 
 ### groupJest.json
 
-jestとts-jestをグループにする設定。
+npmの[jest](https://www.npmjs.com/package/jest)と[ts-jest](https://www.npmjs.com/package/ts-jest)をグループにする設定。
 
 ### groupLinters.json
 
 Linter周りのグループ設定。
-Renovate標準の`packages:linters`に加えて，`prettier`もLinterとしてグループ化する。
+Renovate標準の[packages:linters](https://docs.renovatebot.com/presets-packages/#packageslinters)に加えて，[prettier](https://www.npmjs.com/package/prettier)もLinterとしてグループ化する。
 
 ### groupVeeValidate.json
 
@@ -45,7 +45,7 @@ npmの[vee-validate](https://www.npmjs.com/package/vee-validate)パッケージ�
 ### pin.json
 
 pinについての設定。
-スケジュールを`schedule:daily`に設定し，自動でマージする。
+スケジュールを[schedule:daily](https://docs.renovatebot.com/presets-schedule/#scheduledaily)に設定し，自動でマージする。
 
 ### schedule.json
 
