@@ -47,6 +47,10 @@ npmの[vee-validate](https://www.npmjs.com/package/vee-validate)パッケージ�
 pinについての設定。
 スケジュールを[schedule:daily](https://docs.renovatebot.com/presets-schedule/#scheduledaily)に設定し，自動でマージする。
 
+### reviewer.json
+
+レビュアーを [@hiroxto](https://github.com/hiroxto) に設定する。
+
 ### schedule.json
 
 アップデートのスケジュールを設定。
