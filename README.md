@@ -60,20 +60,6 @@ pinについての設定。
 アップデートのスケジュールを設定。
 日本時間の毎週月曜日の9:00から21:00に実行するように設定。
 
-### update.json
-
-パッケージのアップデートを設定。
-設定しているマネージャーは以下の通り。
-
-- bundler
-- composer
-- docker-compose
-- dockerfile
-- github-actions
-- gomod
-- npm
-
-いずれも自動マージを無効化。
 
 ## 設定を上書きする
 
