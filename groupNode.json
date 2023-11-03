@@ -1,0 +1,11 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "description": "Node.jsをグループにする設定。",
+    "packageRules": [
+        {
+            "groupName": "Node.js",
+            "matchPackageNames": ["node", "@types/node"],
+            "allowedVersions": "/^[0-9]+[24680]\\.[0-9]+\\.0$/"
+        }
+    ]
+}

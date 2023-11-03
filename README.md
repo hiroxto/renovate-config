@@ -32,6 +32,10 @@ npmの[jest](https://www.npmjs.com/package/jest)と[ts-jest](https://www.npmjs.c
 Linter周りのグループ設定。
 Renovate標準の[packages:linters](https://docs.renovatebot.com/presets-packages/#packageslinters)に加えて，[prettier](https://www.npmjs.com/package/prettier)もLinterとしてグループ化する。
 
+### groupNode.json
+
+Node.jsをグループ化する設定。
+
 ### groupVeeValidate.json
 
 [vee-validate](https://github.com/logaretm/vee-validate/)をグループ化する設定。
