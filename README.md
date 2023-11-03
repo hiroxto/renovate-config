@@ -17,11 +17,19 @@ Renovate の設定済みプリセット。
 
 [Shareable Config Presets | Renovate Docs](https://docs.renovatebot.com/config-presets/)
 
-## 設定済みの設定ファイル
+## デフォルトで読み込まれる設定
 
-### gitFlow.json
+`extends` で `"github>hiroxto/renovate-config"` を指定した場合， default.json が読み込まれる。
+default.json で設定済みの項目は以下の通り。
 
-git-flow向けにベースブランチをdevelopに設定する。
+### Renovateのプリセット
+
+- [config:recommended](https://docs.renovatebot.com/presets-config/#configrecommended)
+- [:enableRenovate](https://docs.renovatebot.com/presets-default/#enablerenovate)
+- [:timezone(Asia/Tokyo)](https://docs.renovatebot.com/presets-default/#timezonearg0)
+    - タイムゾーンを Asia/Tokyo にする。
+- [:disableDependencyDashboard](https://docs.renovatebot.com/presets-default/#disabledependencydashboard)
+    - ダッシュボードを無効化する。
 
 ### groupJest.json
 
@@ -51,19 +59,38 @@ npmの[vee-validate](https://www.npmjs.com/package/vee-validate)パッケージ�
 pinについての設定。
 スケジュールを[schedule:daily](https://docs.renovatebot.com/presets-schedule/#scheduledaily)に設定し，自動でマージする。
 
-### reviewer.json
-
-レビュアーを [@hiroxto](https://github.com/hiroxto) に設定する。
-
 ### schedule.json
 
 アップデートのスケジュールを設定。
 日本時間の毎週月曜日の9:00から21:00に実行するように設定。
 
 
+## デフォルトでは読み込まれないプリセット
+
+作成済みではあるが default.json には入れていないプリセット。
+利用する際は，以下の様に `extends` で明示的に指定する必要がある。
+
+```json
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "github>hiroxto/renovate-config:gitFlow"
+    ]
+}
+```
+
+### gitFlow.json
+
+git-flow向けにベースブランチをdevelopに設定する。
+
+### reviewer.json
+
+レビュアーを [@hiroxto](https://github.com/hiroxto) に設定する。
+
+
 ## 設定を上書きする
 
-`renovate.json`内で上書きする。
+単に設定を上書きするだけなら， `renovate.json` 内で上書きする。
 
 ```json
 {
@@ -77,7 +104,7 @@ pinについての設定。
 }
 ```
 
-プリセットの一部を読み込みたくない時は`ignorePresets`を使う。
+default.json で読み込まれるプリセットの一部を読み込みたくない時は `ignorePresets` を使う。
 
 ```json
 {
