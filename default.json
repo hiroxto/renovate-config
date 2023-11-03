@@ -5,7 +5,6 @@
         "config:recommended",
         ":enableRenovate",
         ":timezone(Asia/Tokyo)",
-        ":label(renovate)",
         ":disableDependencyDashboard",
         "github>hiroxto/renovate-config:groupJest",
         "github>hiroxto/renovate-config:groupLinters",
