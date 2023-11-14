@@ -5,6 +5,6 @@
         ":timezone(Asia/Tokyo)"
     ],
     "schedule": [
-        "after 9:00 before 21:00 on monday"
+        "after 9:00 before 21:00 on Monday"
     ]
 }

@@ -31,6 +31,11 @@ default.json で設定済みの項目は以下の通り。
 - [:disableDependencyDashboard](https://docs.renovatebot.com/presets-default/#disabledependencydashboard)
     - ダッシュボードを無効化する。
 
+### defaultSchedule.json
+
+アップデートのスケジュールを設定。
+日本時間の毎週月曜日の9:00から21:00に実行するように設定。
+
 ### groupJest.json
 
 npmの[jest](https://www.npmjs.com/package/jest)と[ts-jest](https://www.npmjs.com/package/ts-jest)をグループにする設定。
@@ -59,12 +64,6 @@ npmの[vee-validate](https://www.npmjs.com/package/vee-validate)パッケージ�
 pinについての設定。
 スケジュールを[schedule:daily](https://docs.renovatebot.com/presets-schedule/#scheduledaily)に設定し，自動でマージする。
 
-### schedule.json
-
-アップデートのスケジュールを設定。
-日本時間の毎週月曜日の9:00から21:00に実行するように設定。
-
-
 ## デフォルトでは読み込まれないプリセット
 
 作成済みではあるが default.json には入れていないプリセット。
@@ -87,6 +86,12 @@ git-flow向けにベースブランチをdevelopに設定する。
 
 レビュアーを [@hiroxto](https://github.com/hiroxto) に設定する。
 
+
+### scheduleWeeklyMonday.json
+
+アップデートのスケジュールを設定。
+日本時間の毎週月曜日の9:00から21:00に実行するように設定。
+旧デフォルトスケジュール。
 
 ## 設定を上書きする
 
@@ -113,7 +118,7 @@ default.json で読み込まれるプリセットの一部を読み込みたく�
         "github>hiroxto/renovate-config"
     ],
     "ignorePresets": [
-        "github>hiroxto/renovate-config:schedule"
+        "github>hiroxto/renovate-config:defaultSchedule"
     ]
 }
 ```

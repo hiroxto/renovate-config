@@ -6,12 +6,12 @@
         ":enableRenovate",
         ":timezone(Asia/Tokyo)",
         ":disableDependencyDashboard",
+        "github>hiroxto/renovate-config:defaultSchedule",
         "github>hiroxto/renovate-config:groupJest",
         "github>hiroxto/renovate-config:groupLinters",
         "github>hiroxto/renovate-config:groupNode",
         "github>hiroxto/renovate-config:groupVeeValidate",
         "github>hiroxto/renovate-config:lockFileMaintenance",
-        "github>hiroxto/renovate-config:pin",
-        "github>hiroxto/renovate-config:schedule"
+        "github>hiroxto/renovate-config:pin"
     ]
 }
