@@ -1,0 +1,10 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "description": "アップデートのスケジュールを設定。日本時間の毎週月曜日の9:00から21:00に実行するように設定。",
+    "extends": [
+        ":timezone(Asia/Tokyo)"
+    ],
+    "schedule": [
+        "after 9:00 before 21:00 on Monday"
+    ]
+}
