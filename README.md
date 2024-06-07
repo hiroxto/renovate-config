@@ -86,6 +86,9 @@ git-flow向けにベースブランチをdevelopに設定する。
 
 レビュアーを [@hiroxto](https://github.com/hiroxto) に設定する。
 
+### scheduleDaily.json
+
+アップデートのスケジュールを日本時間の平日の9:00から21:00に実行するように設定。
 
 ### scheduleWeeklyMonday.json
 
