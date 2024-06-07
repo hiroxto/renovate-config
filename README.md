@@ -34,7 +34,7 @@ default.json で設定済みの項目は以下の通り。
 ### defaultSchedule.json
 
 アップデートのスケジュールを設定。
-日本時間の毎週月曜日の9:00から21:00に実行するように設定。
+日本時間の第3月曜日の9:00から21:00に実行するように設定。
 
 ### groupJest.json
 
@@ -86,6 +86,9 @@ git-flow向けにベースブランチをdevelopに設定する。
 
 レビュアーを [@hiroxto](https://github.com/hiroxto) に設定する。
 
+### scheduleDaily.json
+
+アップデートのスケジュールを日本時間の平日の9:00から21:00に実行するように設定。
 
 ### scheduleWeeklyMonday.json
 
