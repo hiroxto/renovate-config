@@ -1,9 +1,6 @@
 name: Renovate config validate
 
 on:
-    push:
-        branches:
-            - master
     pull_request:
 
 jobs:
