@@ -24,21 +24,12 @@ default.json で設定済みの項目は以下の通り。
 
 ### Renovateのプリセット
 
-- [config:recommended](https://docs.renovatebot.com/presets-config/#configrecommended)
-- [:enableRenovate](https://docs.renovatebot.com/presets-default/#enablerenovate)
-- [:timezone(Asia/Tokyo)](https://docs.renovatebot.com/presets-default/#timezonearg0)
-    - タイムゾーンを Asia/Tokyo にする。
-- [:disableDependencyDashboard](https://docs.renovatebot.com/presets-default/#disabledependencydashboard)
-    - ダッシュボードを無効化する。
+数が多いので default.json を参照
 
 ### defaultSchedule.json
 
 アップデートのスケジュールを設定。
 日本時間の第3月曜日の9:00から21:00に実行するように設定。
-
-### groupJest.json
-
-npmの[jest](https://www.npmjs.com/package/jest)と[ts-jest](https://www.npmjs.com/package/ts-jest)をグループにする設定。
 
 ### groupLinters.json
 
