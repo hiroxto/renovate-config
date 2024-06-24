@@ -34,7 +34,7 @@ default.json で設定済みの項目は以下の通り。
 ### groupLinters.json
 
 Linter周りのグループ設定。
-Renovate標準の[packages:linters](https://docs.renovatebot.com/presets-packages/#packageslinters)に加えて，[prettier](https://www.npmjs.com/package/prettier)もLinterとしてグループ化する。
+Renovate標準の[packages:linters](https://docs.renovatebot.com/presets-packages/#packageslinters)に加えて，各種Linter周りもグループ化する。
 
 ### groupNode.json
 
