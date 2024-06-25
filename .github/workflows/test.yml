@@ -26,7 +26,13 @@ jobs:
 
             -   name: Validate renovate config
                 run: |
-                    for file in `find . -maxdepth 1 -type f -name "*.json" -not -name package.json -not -name package-lock.json -exec basename {} \; | sort`; do
-                        echo "Validate ${file}"
-                        RENOVATE_CONFIG_FILE=${file} npx renovate-config-validator
-                    done
+                    find \
+                        . \
+                        -maxdepth 1 \
+                        -type f \
+                        -name "*.json" \
+                        -not -name package.json \
+                        -not -name package-lock.json \
+                        -exec basename {} \; | \
+                    sort | \
+                    xargs npx renovate-config-validator --strict
