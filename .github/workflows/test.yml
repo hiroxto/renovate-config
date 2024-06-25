@@ -35,4 +35,4 @@ jobs:
                         -not -name package-lock.json \
                         -exec basename {} \; | \
                     sort | \
-                    xargs npx renovate-config-validator
+                    xargs npx renovate-config-validator --strict
