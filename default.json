@@ -7,6 +7,7 @@
         ":timezone(Asia/Tokyo)",
         ":disableDependencyDashboard",
         "group:monorepos",
+        "group:phpstan",
         "packages:eslint",
         "packages:jsUnitTest",
         "packages:phpLinters",
