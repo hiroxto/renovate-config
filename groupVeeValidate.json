@@ -4,8 +4,7 @@
     "packageRules": [
         {
             "groupName": "vee-validate",
-            "matchPackageNames": ["vee-validate"],
-            "matchPackagePrefixes": ["@vee-validate/"]
+            "matchPackageNames": ["vee-validate", "@vee-validate/{/,}**"]
         }
     ]
 }

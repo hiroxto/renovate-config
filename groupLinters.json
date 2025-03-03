@@ -9,10 +9,8 @@
             ],
             "matchPackageNames": [
                 "typescript-eslint",
-                "prettier"
-            ],
-            "matchPackagePrefixes": [
-                "prettier-plugin"
+                "prettier",
+                "prettier-plugin{/,}**"
             ]
         }
     ]
