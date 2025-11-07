@@ -48,7 +48,7 @@ npmの[vee-validate](https://www.npmjs.com/package/vee-validate)パッケージ�
 ### lockFileMaintenance.json
 
 ロックファイルのメンテナンスについての設定。
-スケジュールを毎月1日の9:00から21:00に実行し，自動でマージする。
+スケジュールを毎月第一月曜日の9:00から21:00に実行し，自動でマージする。
 
 ### pin.json
 
