@@ -20,7 +20,7 @@ jobs:
                         test-${{ env.cache-name }}-
                         test-
 
-            -   uses: actions/setup-node@v4
+            -   uses: actions/setup-node@v6
 
             -   run: npm install
 
