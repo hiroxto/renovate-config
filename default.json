@@ -21,11 +21,27 @@
         "customManagers:githubActionsVersions",
         "customManagers:makefileVersions",
         "customManagers:tfvarsVersions",
+        "helpers:pinGitHubActionDigests",
         "github>hiroxto/renovate-config:defaultSchedule",
         "github>hiroxto/renovate-config:groupLinters",
         "github>hiroxto/renovate-config:groupNode",
         "github>hiroxto/renovate-config:groupVeeValidate",
         "github>hiroxto/renovate-config:lockFileMaintenance",
         "github>hiroxto/renovate-config:pin"
+    ],
+    "packageRules": [
+        {
+            "description": "`helpers:pinGitHubActionDigests` による digest の pin と更新だけはスケジュールに関係なく実行する。",
+            "matchDepTypes": [
+                "action"
+            ],
+            "matchUpdateTypes": [
+                "digest",
+                "pinDigest"
+            ],
+            "schedule": [
+                "at any time"
+            ]
+        }
     ]
 }
