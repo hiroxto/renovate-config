@@ -21,6 +21,7 @@
         "customManagers:githubActionsVersions",
         "customManagers:makefileVersions",
         "customManagers:tfvarsVersions",
+        "helpers:pinGitHubActionDigests",
         "github>hiroxto/renovate-config:defaultSchedule",
         "github>hiroxto/renovate-config:groupLinters",
         "github>hiroxto/renovate-config:groupNode",
