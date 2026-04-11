@@ -21,7 +21,7 @@
         "customManagers:githubActionsVersions",
         "customManagers:makefileVersions",
         "customManagers:tfvarsVersions",
-        "helpers:pinGitHubActionDigests",
+        "helpers:pinGitHubActionDigestsToSemver",
         "github>hiroxto/renovate-config:defaultSchedule",
         "github>hiroxto/renovate-config:groupLinters",
         "github>hiroxto/renovate-config:groupNode",
@@ -31,7 +31,7 @@
     ],
     "packageRules": [
         {
-            "description": "`helpers:pinGitHubActionDigests` による digest の pin と更新だけはスケジュールに関係なく実行する。",
+            "description": "`helpers:pinGitHubActionDigestsToSemver` による digest の pin と更新だけはスケジュールに関係なく実行する。",
             "matchDepTypes": [
                 "action"
             ],
