@@ -20,7 +20,7 @@ jobs:
                         test-${{ env.cache-name }}-
                         test-
 
-            -   uses: actions/setup-node@53b83947a5a98c8d113130e565377fae1a50d02f # v6.3.0
+            -   uses: jdx/mise-action@1648a7812b9aeae629881980618f079932869151 # v4.0.1
 
             -   run: npm install
 
