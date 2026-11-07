@@ -29,12 +29,6 @@ Renovate の設定済みプリセット。
 
 読み込まれる Renovate 標準のプリセットは [`default.json`](default.json) を参照。
 
-## 個別に指定できるプリセット
-
-- `github>hiroxto/renovate-config:scheduleDaily` は、日本時間の平日 9:00〜21:00 に更新ブランチを作成する。
-- `github>hiroxto/renovate-config:lockFileMaintenance` は、ロックファイルのメンテナンスを設定する。
-- `github>hiroxto/renovate-config:pin` は、依存関係のバージョンを固定する更新を設定する。
-
 ## 設定を上書きする
 
 単に設定を上書きするだけなら， `renovate.json` 内で上書きする。
