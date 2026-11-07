@@ -17,75 +17,23 @@ Renovate の設定済みプリセット。
 
 [Shareable Config Presets | Renovate Docs](https://docs.renovatebot.com/config-presets/)
 
-## デフォルトで読み込まれる設定
+## デフォルト設定
 
-`extends` で `"github>hiroxto/renovate-config"` を指定した場合， default.json が読み込まれる。
-default.json で設定済みの項目は以下の通り。
+`github>hiroxto/renovate-config` を指定すると `default.json` が読み込まれる。
 
-### Renovateのプリセット
+- 通常の更新は日本時間の平日 9:00〜21:00 に新しいブランチを作成する。
+- レビュアーは `hiroxto` を指定する。
+- ロックファイルのメンテナンスは日本時間の毎月第1月曜日 9:00〜21:00 に行い、自動マージする。
+- 依存関係のバージョンを固定する更新には [`schedule:daily`](https://docs.renovatebot.com/presets-schedule/#scheduledaily) を適用し、自動マージする。
+- GitHub Actions のダイジェストの固定と更新は時間帯を制限しない。
 
-数が多いので default.json を参照
+読み込まれる Renovate 標準のプリセットは [`default.json`](default.json) を参照。
 
-### defaultSchedule.json
+## 個別に指定できるプリセット
 
-アップデートのスケジュールを設定。
-日本時間の第3月曜日の9:00から21:00に実行するように設定。
-
-### groupLinters.json
-
-Linter周りのグループ設定。
-Renovate標準の[packages:linters](https://docs.renovatebot.com/presets-packages/#packageslinters)に加えて，各種Linter周りもグループ化する。
-
-### groupNode.json
-
-Node.jsをグループ化する設定。
-
-### groupVeeValidate.json
-
-[vee-validate](https://github.com/logaretm/vee-validate/)をグループ化する設定。
-npmの[vee-validate](https://www.npmjs.com/package/vee-validate)パッケージと[@vee-validate](https://github.com/logaretm/vee-validate/tree/main/packages)以下のパッケージをグループ化する。
-
-### lockFileMaintenance.json
-
-ロックファイルのメンテナンスについての設定。
-スケジュールを毎月第一月曜日の9:00から21:00に実行し，自動でマージする。
-
-### pin.json
-
-pinについての設定。
-スケジュールを[schedule:daily](https://docs.renovatebot.com/presets-schedule/#scheduledaily)に設定し，自動でマージする。
-
-## デフォルトでは読み込まれないプリセット
-
-作成済みではあるが default.json には入れていないプリセット。
-利用する際は，以下の様に `extends` で明示的に指定する必要がある。
-
-```json
-{
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "extends": [
-        "github>hiroxto/renovate-config:gitFlow"
-    ]
-}
-```
-
-### gitFlow.json
-
-git-flow向けにベースブランチをdevelopに設定する。
-
-### reviewer.json
-
-レビュアーを [@hiroxto](https://github.com/hiroxto) に設定する。
-
-### scheduleDaily.json
-
-アップデートのスケジュールを日本時間の平日の9:00から21:00に実行するように設定。
-
-### scheduleWeeklyMonday.json
-
-アップデートのスケジュールを設定。
-日本時間の毎週月曜日の9:00から21:00に実行するように設定。
-旧デフォルトスケジュール。
+- `github>hiroxto/renovate-config:scheduleDaily` は、日本時間の平日 9:00〜21:00 に更新ブランチを作成する。
+- `github>hiroxto/renovate-config:lockFileMaintenance` は、ロックファイルのメンテナンスを設定する。
+- `github>hiroxto/renovate-config:pin` は、依存関係のバージョンを固定する更新を設定する。
 
 ## 設定を上書きする
 
@@ -103,7 +51,7 @@ git-flow向けにベースブランチをdevelopに設定する。
 }
 ```
 
-default.json で読み込まれるプリセットの一部を読み込みたくない時は `ignorePresets` を使う。
+標準プリセットの一部を除外するには `ignorePresets` に指定する。
 
 ```json
 {
@@ -112,7 +60,7 @@ default.json で読み込まれるプリセットの一部を読み込みたく�
         "github>hiroxto/renovate-config"
     ],
     "ignorePresets": [
-        "github>hiroxto/renovate-config:defaultSchedule"
+        "group:phpstan"
     ]
 }
 ```
