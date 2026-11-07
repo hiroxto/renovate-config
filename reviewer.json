@@ -1,5 +1,0 @@
-{
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "description": "レビュアーを @hiroxto に設定する。",
-    "reviewers": ["hiroxto"]
-}

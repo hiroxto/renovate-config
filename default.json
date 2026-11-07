@@ -21,14 +21,26 @@
         "customManagers:githubActionsVersions",
         "customManagers:makefileVersions",
         "customManagers:tfvarsVersions",
-        "helpers:pinGitHubActionDigestsToSemver",
-        "github>hiroxto/renovate-config:defaultSchedule",
-        "github>hiroxto/renovate-config:groupLinters",
-        "github>hiroxto/renovate-config:groupNode",
-        "github>hiroxto/renovate-config:groupVeeValidate",
-        "github>hiroxto/renovate-config:lockFileMaintenance",
-        "github>hiroxto/renovate-config:pin"
+        "helpers:pinGitHubActionDigestsToSemver"
     ],
+    "schedule": [
+        "after 9:00 before 21:00 every weekday"
+    ],
+    "reviewers": ["hiroxto"],
+    "lockFileMaintenance": {
+        "schedule": [
+            "on the 1st day instance on Monday at 09:00 before 21:00"
+        ],
+        "enabled": true,
+        "automerge": true
+    },
+    "pin": {
+        "extends": [
+            "schedule:daily"
+        ],
+        "enabled": true,
+        "automerge": true
+    },
     "packageRules": [
         {
             "description": "`helpers:pinGitHubActionDigestsToSemver` による digest の pin と更新だけはスケジュールに関係なく実行する。",
