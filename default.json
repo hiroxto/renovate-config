@@ -27,6 +27,7 @@
         "after 9:00 before 21:00 every weekday"
     ],
     "minimumReleaseAge": "1 day",
+    "prConcurrentLimit": 0,
     "reviewers": ["hiroxto"],
     "lockFileMaintenance": {
         "schedule": [
