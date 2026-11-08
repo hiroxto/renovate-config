@@ -32,15 +32,13 @@
         "schedule": [
             "after 9:00 before 21:00 on Monday"
         ],
-        "enabled": true,
-        "automerge": false
+        "enabled": true
     },
     "pin": {
         "extends": [
             "schedule:daily"
         ],
-        "enabled": true,
-        "automerge": false
+        "enabled": true
     },
     "packageRules": [
         {
