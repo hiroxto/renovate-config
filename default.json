@@ -24,12 +24,12 @@
         "helpers:pinGitHubActionDigestsToSemver"
     ],
     "schedule": [
-        "after 9:00 before 21:00 every weekday"
+        "after 9:00 before 21:00"
     ],
     "reviewers": ["hiroxto"],
     "lockFileMaintenance": {
         "schedule": [
-            "on the 1st day instance on Monday at 09:00 before 21:00"
+            "after 9:00 before 21:00 on Monday"
         ],
         "enabled": true,
         "automerge": true
