@@ -6,13 +6,5 @@
     ],
     "extends": [
         "local>hiroxto/renovate-config"
-    ],
-    "npm": {
-        "patch": {
-            "automerge": true
-        },
-        "minor": {
-            "automerge": true
-        }
-    }
+    ]
 }
