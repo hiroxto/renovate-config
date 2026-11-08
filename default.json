@@ -26,6 +26,7 @@
     "schedule": [
         "after 9:00 before 21:00"
     ],
+    "minimumReleaseAge": "1 day",
     "reviewers": ["hiroxto"],
     "lockFileMaintenance": {
         "schedule": [

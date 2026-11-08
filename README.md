@@ -22,6 +22,7 @@ Renovate の設定済みプリセット。
 `github>hiroxto/renovate-config` を指定すると `default.json` が読み込まれる。
 
 - 通常の更新は日本時間の毎日 9:00〜21:00 に新しいブランチを作成する。
+- リリースを安定と判定するまでの最低経過時間（`minimumReleaseAge`）は1日とする。
 - レビュアーは `hiroxto` を指定する。
 - ロックファイルのメンテナンスは日本時間の毎週月曜日 9:00〜21:00 に行い、自動マージする。
 - 依存関係のバージョンを固定する更新には [`schedule:daily`](https://docs.renovatebot.com/presets-schedule/#scheduledaily) を適用し、自動マージする。
