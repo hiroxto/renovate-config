@@ -24,7 +24,7 @@
         "helpers:pinGitHubActionDigestsToSemver"
     ],
     "schedule": [
-        "after 9:00 before 21:00"
+        "after 9:00 before 21:00 every weekday"
     ],
     "minimumReleaseAge": "1 day",
     "reviewers": ["hiroxto"],
