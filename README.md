@@ -6,10 +6,8 @@ Renovate の設定済みプリセット。
 
 ```json
 {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "extends": [
-        "github>hiroxto/renovate-config"
-    ]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>hiroxto/renovate-config"]
 }
 ```
 
@@ -37,13 +35,9 @@ Renovate の設定済みプリセット。
 
 ```json
 {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "extends": [
-        "github>hiroxto/renovate-config"
-    ],
-    "schedule": [
-        "every weekend"
-    ]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>hiroxto/renovate-config"],
+  "schedule": ["every weekend"]
 }
 ```
 
@@ -51,12 +45,19 @@ Renovate の設定済みプリセット。
 
 ```json
 {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "extends": [
-        "github>hiroxto/renovate-config"
-    ],
-    "ignorePresets": [
-        "group:phpstan"
-    ]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>hiroxto/renovate-config"],
+  "ignorePresets": ["group:phpstan"]
 }
 ```
+
+## 開発時の整形
+
+インデントは2スペースとし、BiomeでJSON、YAML、Markdownを整形する。
+
+```sh
+npm install
+npm run format
+```
+
+`npm run format:check` で整形済みか確認する。CIでも同じ確認を行う。
