@@ -1,59 +1,46 @@
 {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "description": "デフォルトで読み込まれる設定ファイル。",
-    "extends": [
-        "config:recommended",
-        ":enableRenovate",
-        ":timezone(Asia/Tokyo)",
-        ":disableDependencyDashboard",
-        "group:monorepos",
-        "group:phpstan",
-        "packages:eslint",
-        "packages:jsUnitTest",
-        "packages:phpLinters",
-        "packages:phpUnitTest",
-        "packages:postcss",
-        "packages:react",
-        "packages:stylelint",
-        "packages:vite",
-        "customManagers:biomeVersions",
-        "customManagers:dockerfileVersions",
-        "customManagers:githubActionsVersions",
-        "customManagers:makefileVersions",
-        "customManagers:tfvarsVersions",
-        "helpers:pinGitHubActionDigestsToSemver"
-    ],
-    "schedule": [
-        "after 9:00 before 21:00 every weekday"
-    ],
-    "minimumReleaseAge": "1 day",
-    "prConcurrentLimit": 0,
-    "reviewers": ["hiroxto"],
-    "lockFileMaintenance": {
-        "schedule": [
-            "after 9:00 before 21:00 on Monday"
-        ],
-        "enabled": true
-    },
-    "pin": {
-        "extends": [
-            "schedule:daily"
-        ],
-        "enabled": true
-    },
-    "packageRules": [
-        {
-            "description": "`helpers:pinGitHubActionDigestsToSemver` による digest の pin と更新だけはスケジュールに関係なく実行する。",
-            "matchDepTypes": [
-                "action"
-            ],
-            "matchUpdateTypes": [
-                "digest",
-                "pinDigest"
-            ],
-            "schedule": [
-                "at any time"
-            ]
-        }
-    ]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "デフォルトで読み込まれる設定ファイル。",
+  "extends": [
+    "config:recommended",
+    ":enableRenovate",
+    ":timezone(Asia/Tokyo)",
+    ":disableDependencyDashboard",
+    "group:monorepos",
+    "group:phpstan",
+    "packages:eslint",
+    "packages:jsUnitTest",
+    "packages:phpLinters",
+    "packages:phpUnitTest",
+    "packages:postcss",
+    "packages:react",
+    "packages:stylelint",
+    "packages:vite",
+    "customManagers:biomeVersions",
+    "customManagers:dockerfileVersions",
+    "customManagers:githubActionsVersions",
+    "customManagers:makefileVersions",
+    "customManagers:tfvarsVersions",
+    "helpers:pinGitHubActionDigestsToSemver"
+  ],
+  "schedule": ["after 9:00 before 21:00 every weekday"],
+  "minimumReleaseAge": "1 day",
+  "prConcurrentLimit": 0,
+  "reviewers": ["hiroxto"],
+  "lockFileMaintenance": {
+    "schedule": ["after 9:00 before 21:00 on Monday"],
+    "enabled": true
+  },
+  "pin": {
+    "extends": ["schedule:daily"],
+    "enabled": true
+  },
+  "packageRules": [
+    {
+      "description": "`helpers:pinGitHubActionDigestsToSemver` による digest の pin と更新だけはスケジュールに関係なく実行する。",
+      "matchDepTypes": ["action"],
+      "matchUpdateTypes": ["digest", "pinDigest"],
+      "schedule": ["at any time"]
+    }
+  ]
 }
