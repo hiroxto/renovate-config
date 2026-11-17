@@ -29,6 +29,26 @@ Renovate の設定済みプリセット。
 
 読み込まれる Renovate 標準のプリセットは [`default.json`](default.json) を参照。
 
+## デフォルトでは読み込まれないプリセット
+
+利用するには、リポジトリの `renovate.json` の `extends` で明示的に指定する。
+デフォルト設定と併用する場合は、以下の順序で指定する。
+
+```json
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>hiroxto/renovate-config",
+    "github>hiroxto/renovate-config:scheduleMonthlySecondMonday"
+  ]
+}
+```
+
+### scheduleMonthlySecondMonday.json
+
+通常の更新ブランチを日本時間の毎月第2月曜日 9:00〜21:00 に作成する。
+ロックファイルのメンテナンス、依存関係のバージョン固定、GitHub Actions のダイジェストの固定と更新には、既存の個別スケジュールを適用する。
+
 ## 設定を上書きする
 
 単に設定を上書きするだけなら， `renovate.json` 内で上書きする。
