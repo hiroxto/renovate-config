@@ -1,0 +1,6 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "通常の更新ブランチを日本時間の毎月第2月曜日 9:00〜21:00 に作成する。",
+  "extends": [":timezone(Asia/Tokyo)"],
+  "schedule": ["after 9:00 before 21:00 on the 2nd day instance on Monday"]
+}
