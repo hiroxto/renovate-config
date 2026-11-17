@@ -14,6 +14,10 @@ run = "npm run format:check"
 description = "Renovate設定を検証する"
 run = "npm run test"
 
+[tasks.renovate-config-validator]
+description = "Renovate設定を直接検証する"
+run = "npx renovate-config-validator --strict"
+
 [tasks."renovate-config-validator:all"]
 description = "すべてのRenovate設定を一括で検証する"
 run = '''
