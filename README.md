@@ -50,14 +50,3 @@ Renovate の設定済みプリセット。
   "ignorePresets": ["group:phpstan"]
 }
 ```
-
-## 開発時の整形
-
-インデントは2スペースとし、BiomeでJSON、YAML、Markdownを整形する。
-
-```sh
-npm install
-npm run format
-```
-
-`npm run format:check` で整形済みか確認する。CIでも同じ確認を行う。
