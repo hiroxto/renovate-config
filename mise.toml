@@ -1,3 +1,35 @@
 [tools]
 node = "26.13.1"
 npm = "12.2.2"
+
+[tasks.format]
+description = "Biomeでファイルを整形する"
+run = "npm run format"
+
+[tasks."format:check"]
+description = "Biomeでファイルの書式を確認する"
+run = "npm run format:check"
+
+[tasks.test]
+description = "Renovate設定を検証する"
+run = "npm run test"
+
+[tasks.renovate-config-validator]
+description = "Renovate設定を検証する"
+run = "npx renovate-config-validator --strict"
+
+[tasks."renovate-config-validator:all"]
+description = "すべてのRenovate設定を一括で検証する"
+run = '''
+find \
+  . \
+  -maxdepth 1 \
+  -type f \
+  -name "*.json" \
+  -not -name package.json \
+  -not -name package-lock.json \
+  -not -name biome.json \
+  -exec basename {} \; | \
+sort | \
+xargs npx renovate-config-validator --strict
+'''

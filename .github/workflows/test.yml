@@ -25,18 +25,7 @@ jobs:
       - run: npm install
 
       - name: Check formatting
-        run: npm run format:check
+        run: mise run format:check
 
       - name: Validate renovate config
-        run: |
-          find \
-            . \
-            -maxdepth 1 \
-            -type f \
-            -name "*.json" \
-            -not -name package.json \
-            -not -name package-lock.json \
-            -not -name biome.json \
-            -exec basename {} \; | \
-          sort | \
-          xargs npx renovate-config-validator --strict
+        run: mise run renovate-config-validator:all
