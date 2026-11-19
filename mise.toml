@@ -1,6 +1,6 @@
 [tools]
 node = "26.13.1"
-npm = "12.2.2"
+npm = "12.2.3"
 
 [tasks.format]
 description = "Biomeでファイルを整形する"
