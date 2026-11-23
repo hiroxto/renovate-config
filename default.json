@@ -41,6 +41,13 @@
       "matchDepTypes": ["action"],
       "matchUpdateTypes": ["digest", "pinDigest"],
       "schedule": ["at any time"]
+    },
+    {
+      "description": "日本時間の2026年11月23日と24日は更新を無効にする。",
+      "matchJsonata": [
+        "$now('[Y0001]-[M01]-[D01]', '+0900') in ['2026-11-23', '2026-11-24']"
+      ],
+      "enabled": false
     }
   ]
 }
